@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #003366;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    color: white;
+    padding: 15px 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/hero.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.cta-btn {
+    background: gold;
+    padding: 10px 20px;
+    color: #003366;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Loan Calculator */
+#loans {
+    padding: 30px;
+    text-align: center;
+}
+
+#loans input {
+    padding: 8px;
+    margin: 5px;
+}
+
+#loans button {
+    background: gold;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

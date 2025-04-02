@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VICCU - Vision Cooperative Credit Union Ltd</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="logo">VICCU</div>
+        <div class="hamburger">☰</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#accounts">Accounts & Membership</a></li>
+            <li><a href="#loans">Loans & Credit</a></li>
+            <li><a href="#transfers">Money Transfers</a></li>
+            <li><a href="#digital">Digital Banking</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#" class="login-btn">Member Login</a></li>
+        </ul>
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <select id="color-theme">
+                <option value="default">Default (Blue)</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+            </select>
+            <button id="mode-toggle">Dark Mode</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image: url('C:/Users/MICROSOFT SURFACE/Desktop/Erick-001/1.jpeg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Your Trusted Financial Partner in Cameroon & CEMAC Region</h1>
+            <p>Affordable Loans | Secure Savings | Digital Banking</p>
+            <button class="cta-btn">Open an Account</button>
+        </div>
+    </section>
+
+    <!-- Quick Access Cards -->
+    <section class="quick-access">
+        <div class="card" style="background-image: url('C:/Users/MICROSOFT SURFACE/Desktop/Erick-001/2.jpeg');">
+            <h3>Apply for a Loan</h3>
+        </div>
+        <div class="card"><h3>Open an Account</h3></div>
+        <div class="card"><h3>Send & Receive Money</h3></div>
+        <div class="card"><h3>Digital Banking App</h3></div>
+    </section>
+
+    <!-- About VICCU -->
+    <section id="about" class="about">
+        <h2>About VICCU</h2>
+        <p>Vision Cooperative Credit Union (VICCU-BOD) is a member-owned microfinance institution aimed at improving living standards through savings, loans, and investment opportunities.</p>
+        <img src="C:/Users/MICROSOFT SURFACE/Desktop/Erick-001/3.jpeg" alt="VICCU About" class="about-img">
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-tabs">
+            <div class="tab" data-tab="loans">Loans & Microfinance</div>
+            <div class="tab" data-tab="savings">Savings & Investment</div>
+            <div class="tab" data-tab="digital">Digital Banking</div>
+        </div>
+        <div id="tab-content" class="tab-content">
+            <img src="C:/Users/MICROSOFT SURFACE/Desktop/Erick-001/4.jpeg" alt="Services" class="service-img">
+        </div>
+    </section>
+
+    <!-- Money Transfers Section -->
+    <section id="transfers" class="money-transfers">
+        <h2>Money Transfers</h2>
+        <div id="transfers-content" class="transfers-content">
+            <p>We send instant money transfers from across the following countries:</p>
+            <div class="flag-carousel">
+                <div class="flag" data-country="cameroon"><img src="https://flagcdn.com/w80/cm.png" alt="Cameroon Flag"></div>
+ “
+
+                <div class="flag" data-country="nigeria"><img src="https://flagcdn.com/w80/ng.png" alt="Nigeria Flag"></div>
+                <div class="flag" data-country="ghana"><img src="https://flagcdn.com/w80/gh.png" alt="Ghana Flag"></div>
+                <div class="flag" data-country="kenya"><img src="https://flagcdn.com/w80/ke.png" alt="Kenya Flag"></div>
+                <div class="flag" data-country="south-africa"><img src="https://flagcdn.com/w80/za.png" alt="South Africa Flag"></div>
+                <div class="flag" data-country="algeria"><img src="https://flagcdn.com/w80/dz.png" alt="Algeria Flag"></div>
+                <div class="flag" data-country="egypt"><img src="https://flagcdn.com/w80/eg.png" alt="Egypt Flag"></div>
+                <div class="flag" data-country="morocco"><img src="https://flagcdn.com/w80/ma.png" alt="Morocco Flag"></div>
+                <div class="flag" data-country="uganda"><img src="https://flagcdn.com/w80/ug.png" alt="Uganda Flag"></div>
+                <div class="flag" data-country="tanzania"><img src="https://flagcdn.com/w80/tz.png" alt="Tanzania Flag"></div>
+            </div>
+            <div id="currency-info" class="currency-info"></div>
+        </div>
+    </section>
+
+    <!-- Loan Calculator -->
+    <section id="loans" class="loan-calculator">
+        <h2>Loan Calculator</h2>
+        <div class="calculator">
+            <label>Loan Amount (FCFA):</label>
+            <input type="number" id="loan-amount" placeholder="Enter amount">
+            <label>Duration (Months):</label>
+            <input type="number" id="loan-duration" placeholder="Enter months">
+            <button onclick="calculateLoan()">Calculate</button>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="C:/Users/MICROSOFT SURFACE/Desktop/Erick-001/5.jpeg" alt="VICCU Footer" class="footer-img">
+            <p>© 2025 VICCU Ltd | P.O. Box 533, Kumba, Cameroon</p>
+            <p>Contact: <a href="mailto:info@viccu.com">info@viccu.com</a></p>
+            <div class="social-links">
+                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

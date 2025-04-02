@@ -1,0 +1,356 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #F5F5F5;
+    color: #003366;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #1a1a1a;
+    color: #FFFFFF;
+}
+
+/* Navigation */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #003366;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links .login-btn {
+    background: #FFD700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #003366;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    display: flex;
+    gap: 1rem;
+}
+
+#color-theme, #mode-toggle {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: #FFFFFF;
+    color: #003366;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: no-repeat center/cover;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #FFFFFF;
+}
+
+.cta-btn {
+    background: #FFD700;
+    color: #003366;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: #e6c200;
+}
+
+/* Quick Access Cards */
+.quick-access {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.card {
+    background: #FFFFFF no-repeat center/cover;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+    color: #003366;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.service-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab {
+    padding: 1rem 2rem;
+    background: #003366;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tab-content {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.service-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+/* Money Transfers Section */
+.money-transfers {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.transfers-content {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.flag-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    margin-top: 1rem;
+    animation: scroll 20s linear infinite;
+}
+
+.flag {
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+.flag img {
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.flag:hover img {
+    transform: scale(1.1);
+}
+
+.currency-info {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Loan Calculator */
+.loan-calculator {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.calculator {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.calculator label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+.calculator input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #003366;
+    border-radius: 5px;
+}
+
+.calculator button {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background: #FFD700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #003366;
+    color: #FFFFFF;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #003366;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .theme-toggle {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 1rem;
+    }
+
+    .flag-carousel {
+        animation: none;
+        overflow-x: scroll;
+    }
+}
+
+/* Color Themes */
+body.green-theme { --primary-color: #006633; }
+body.purple-theme { --primary-color: #660066; }
+body.red-theme { --primary-color: #660000; }
+body.orange-theme { --primary-color: #FF6600; }
+body.default-theme { --primary-color: #003366; }
+
+.navbar, .tab { background: var(--primary-color, #003366); }
+.calculator input { border-color: var(--primary-color, #003366); }
